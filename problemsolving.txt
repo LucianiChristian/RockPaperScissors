@@ -1,0 +1,15 @@
+Plan
+----
+Does your program have a user interface?
+    No.
+What inputs will your program have?
+    User text-input in the console for rock, paper, or scissors.
+    Program generated input for rock, paper, or scissors.
+What's the desired output?
+    A win or loss message upon each choice. A final win or loss message 
+    upon game finish.
+Given your inputs, what are the steps necessary to return the desired output?
+    Ask user for input with console.log() and store it 
+    
+
+    
