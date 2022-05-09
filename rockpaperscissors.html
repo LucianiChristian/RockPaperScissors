@@ -4,10 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissors</title>
     <script src="javascript.js"></script>
 </head>
 <body>
+    <header>
+        <h1>Rock Paper Scissors</h1>
+        <div class="game-description">Make Your Choice | First To 5 Wins</div>
+    </header>
+
+    <div class="start-menu">
+        <button class="startGame" onclick="transitionInPlay()">Start Game</button>
+    </div>
+
     
+    <div class="in-play">
+        <div class="scoreboard">
+            <h3 class="player-score">Player Score: 0</h3>
+            <h3 class="computer-score">Computer Score: 0</h3>
+        </div>
+
+        <div class="game-area">
+            <div class="round">
+                <h3 class="computer-choice-text">Round: </h3>
+                <div class="user-computer-choices">
+                    <div class="user-choice">
+                        <h3>Player</h3>
+                        <img class="player-choice-image" alt="player choice" src="images/paper.jpg">
+                    </div>
+                    <div class="computer-choice">
+                        <h3>Computer</h3>
+                        <img class="computer-choice-image" alt="computer choice" src="images/paper.jpg">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="choice">
+                <h3 class="user-choice-text">Choose</h3>
+                <div class="user-choice-buttons">
+                    <button onclick="round('rock')"><img alt="rock" src="images/rock.jpg"></button>
+                    <button onclick="round('paper')"><img alt="paper" src="images/paper.jpg"></button>
+                    <button onclick="round('scissors')"><img alt="scissors" src="images/scissors.jpg"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>Developed By Christian Luciani</footer>
 </body>
 </html>
