@@ -42,6 +42,9 @@ function round(userChoice) {
         roundNumber++;
         computerScoreDisplay.innerHTML = "Computer Score: " + computerWinCount;
     }
+    else {
+        roundNumber++;
+    }
 
     roundNumberDisplay.innerHTML = "Round: " + roundNumber;
 
